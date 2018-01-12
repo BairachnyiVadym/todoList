@@ -17,6 +17,7 @@ let TodoInput = ({dispatch}) => {
     );
 };
 
+//need explanation
 TodoInput = connect()(TodoInput);
 
 export default TodoInput;
