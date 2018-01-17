@@ -13,7 +13,7 @@ function getVisibleTodos(todos, filter) {
             return todos.filter((todo) => todo.completed);
         case "SHOW ALL":
             default:
-                return state.todos;
+                return todos;
     }
 }
 
@@ -25,7 +25,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchTiProps = (dispatch) => {
     return {
-        onClick: (id) => {
+        onTodoClick: (id) => {
             dispatch(ToggleTodo(id));
         }
     }
