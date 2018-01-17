@@ -3,6 +3,7 @@ import './App.css';
 
 import ReactHeader from "./ReactHeader";
 import TodoInput from "./components/TodoInput";
+import VisibleTodoList from "./containers/VisibleTodoList";
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <ReactHeader/>
         <TodoInput/>
+        <VisibleTodoList/>
       </div>
     );
   }
