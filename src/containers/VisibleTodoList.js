@@ -7,11 +7,11 @@ import {connect} from "react-redux";
 
 function getVisibleTodos(todos, filter) {
     switch (filter) {
-        case "SHOW ACTIVE":
+        case "SHOW_ACTIVE":
             return todos.filter((todo) => !todo.completed);
-        case "SHOW COMPLETED":
+        case "SHOW_COMPLETED":
             return todos.filter((todo) => todo.completed);
-        case "SHOW ALL":
+        case "SHOW_ALL":
             default:
                 return todos;
     }

@@ -4,7 +4,7 @@ import './App.css';
 import ReactHeader from "./ReactHeader";
 import TodoInput from "./components/TodoInput";
 import VisibleTodoList from "./containers/VisibleTodoList";
-
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <ReactHeader/>
         <TodoInput/>
         <VisibleTodoList/>
+        <Footer/>
       </div>
     );
   }
